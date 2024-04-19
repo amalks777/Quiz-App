@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #001e4d;
+}
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 30px;
+}
+.app h1{
+    font-weight: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.quiz{
+    padding: 20px 10px;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-size: 18px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){ /*not(disabled) used when we lock any answer,after no hover will works*/
+    background: #222;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop; /*after locked,a no-movement icon will shows*/
+}
+#next{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px 175px;
+    display: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.correct{
+    background: green;
+    color: #fff;
+}
+.incorrect{
+    background: red;
+}
